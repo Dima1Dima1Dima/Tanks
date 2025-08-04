@@ -5,7 +5,6 @@ import time
 import sys
 
 from platform_module import Platform
-from platform_module import Obstacle
 from game_data import load_game_data, save_game_data
 
 # Инициализация Pygame
