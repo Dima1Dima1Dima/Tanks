@@ -42,11 +42,17 @@ pygame.display.set_caption("Танковая битва")
 # Установление времени обновления
 clock = pygame.time.Clock()
 
-# Шрифт
-font = pygame.font.Font(None, 36)
-font_menu = pygame.font.Font(None, 48)
-font_home = pygame.font.Font(None, 425)
-font_o = pygame.font.Font(None, 1000)
+# Размеры шрифта зависят от размера экрана
+font_size = int(screen_width * 0.018)  # Пример зависимости от ширины экрана
+font_menu_size = int(screen_width * 0.024)
+font_home_size = int(screen_width * 0.2)
+font_o_size = int(screen_width * 0.47)
+
+# Инициализация шрифтов с учетом расчетных размеров
+font = pygame.font.Font(None, font_size)
+font_menu = pygame.font.Font(None, font_menu_size)
+font_home = pygame.font.Font(None, font_home_size)
+font_o = pygame.font.Font(None, font_o_size)
 
 updates = 4
 naw_updates = 4
